@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "616075840200",
+    "firebase_url": "https://mywaiter-73d99.firebaseio.com",
+    "project_id": "mywaiter-73d99",
+    "storage_bucket": "mywaiter-73d99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616075840200:android:90cf5c5bd813e71a4cb3fd",
+        "android_client_info": {
+          "package_name": "com.example.mywaiter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616075840200-jm83v19scqicf0m6fufqqh2mfapnf5e0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mywaiter",
+            "certificate_hash": "5a014819f1eb5b82f7ca55e3a007f66c6e1b0706"
+          }
+        },
+        {
+          "client_id": "616075840200-iglbnbu1u1mk5rpoev2oblafbolb3r1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEqc-RXfFJZtbEhlk7X-ZpJ1RBJ6wgPqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616075840200-iglbnbu1u1mk5rpoev2oblafbolb3r1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

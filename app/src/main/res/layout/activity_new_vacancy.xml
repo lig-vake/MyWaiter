@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingTop="30dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="15dp"
+    tools:context=".NewVacancyActivity">
+
+    <EditText
+        android:id="@+id/etNewVacName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Название"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNewVacTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_round_corners"
+        android:onClick="setTime"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNewVacReward"
+        tools:text="20:20" />
+
+    <TextView
+        android:id="@+id/tvNewVacDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_round_corners"
+        android:onClick="setDate"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNewVacTime"
+        tools:text="01.11.2020" />
+
+    <Button
+        android:id="@+id/btnCreateVacancy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_corners"
+        android:backgroundTint="#f1f2f6"
+        android:onClick="createVacancy"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/vacansy_create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edNewVacReward"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="Оплата"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNewVacName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/edLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789qwertzuiopasdfghjklyxcvbnm@._"
+            android:ems="16"
+            android:fontFamily="sans-serif-smallcaps"
+            android:hint="@string/prompt_email"
+            android:inputType="textPersonName|text|textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:text="Пароль может состоять только из латинских букв (A-Z), нижнего подчеркивания (_), должен состоять из 8 и болeе знаков и содержать как минимум одну цифру."
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/tilPassword"
+        app:layout_constraintStart_toStartOf="@+id/tilPassword"
+        app:layout_constraintTop_toBottomOf="@+id/tilLogin" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="16"
+            android:fontFamily="sans-serif-smallcaps"
+            android:hint="@string/prompt_password"
+            android:inputType="textPersonName|textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPasswordSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilPassword">
+
+        <EditText
+            android:id="@+id/edPasswordSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="16"
+            android:fontFamily="sans-serif-smallcaps"
+            android:hint="@string/prompt_password_second"
+            android:inputType="textPersonName|textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="onClickRegister"
+        android:text="@string/action_register"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tilPassword"
+        app:layout_constraintStart_toStartOf="@+id/tilPassword"
+        app:layout_constraintTop_toBottomOf="@+id/tilPasswordSec" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
